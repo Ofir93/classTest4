@@ -1,0 +1,48 @@
+<form>
+<label >Type of actions :</label>
+<input
+id="Type"
+  list="list"
+  type="list"
+  name="type"
+  [(ngModel)]="type"
+  #categoryInput="ngModel"
+  required
+/>
+<datalist id="list">
+  <option value="Withdraw"></option>
+  <option value="Deposit"></option>
+  <option value="Loan"></option>
+</datalist>
+
+<label >Total Amount $ : </label>
+<input
+  type="number"
+  id="total"
+  name="amount"
+  [(ngModel)]="amount"
+  #descriptionInput="ngModel"
+  required
+/>
+<label >Loan Payments : </label>
+<input
+  id="loan"
+  type="number"
+  name="payments"
+  [(ngModel)]="payments"
+  #destinationInput="ngModel"
+  required
+/>
+
+
+<label>Interest (%) </label>
+<input
+id="int"
+  type="number"
+  name="intress"
+  [(ngModel)]="intress"
+  #imgUrlInput="ngModel"
+  required
+/>
+<button class="btn btn-primary" type="button" (click)="submitForm()">Submit</button>
+</form>

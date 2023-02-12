@@ -1,0 +1,24 @@
+<header>
+  <h1>{{title}}</h1>
+</header>
+<div class="container-fluid">
+  <label for="account" >Please enter account number</label>
+  <br />
+  <input type="number"
+  name="accountNumber"
+  id="account"
+  [(ngModel)]="accountNumber"
+  #titleInput="ngModel"
+  required
+  placeholder="Account number">
+  <div>
+    <button (click)="submitAccounNumber()" type="button" class="btn btn-primary">Get Account Operations</button>
+    <button (click)="addNewOperation()" class="btn btn-primary">Add New Operation</button>
+  </div>
+  <div id="container" class="container-fluid">
+    <app-show-operations *ngIf="showOn"></app-show-operations>
+    <app-add-operation *ngIf="newOn" (submitAccounNumber)="submitAccounNumber()"></app-add-operation>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

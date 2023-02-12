@@ -1,0 +1,13 @@
+
+<div class="container-md containerShow">
+  <div class="card" style="width: 18rem;" *ngFor="let operation of operations">
+    <div class="card-body">
+    <h3 class="card-title">Account Number : {{ operation.accountNumber }} </h3>
+    <h5 class="card-subtitle mb-2 text-muted">Action Type : {{ operation.type }} </h5>
+    <p class="card-text">Amount Of : {{ operation.amount }} $</p>
+    <p class="card-text">Date : {{ operation.date }} </p>
+    <p *ngIf="operation.payments" class="card-text">Loan Payments :{{ operation.payments }}</p>
+    <p *ngIf="operation.intress" class="card-text">Loan intress : {{ operation.intress }}%</p>
+  </div>
+  </div>
+</div>
