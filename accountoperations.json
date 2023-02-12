@@ -1,0 +1,87 @@
+[{
+  "_id": {
+    "$oid": "63e53419e8e7c9ac0fd1be19"
+  },
+  "objectId": 1,
+  "accountNumber": 123,
+  "type": "withral",
+  "amount": 1000,
+  "date": {
+    "$date": {
+      "$numberLong": "1675965465637"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e74e25f6ed36fd9747364d"
+  },
+  "objectId": 2,
+  "accountNumber": 123,
+  "type": "deposit",
+  "amount": 4000,
+  "date": {
+    "$date": {
+      "$numberLong": "1676103205325"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e7adc79dba3cb982a6596d"
+  },
+  "accountNumber": 123,
+  "type": "deposit",
+  "amount": 402200,
+  "date": {
+    "$date": {
+      "$numberLong": "1676127687566"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e7b2299dba3cb982a65970"
+  },
+  "accountNumber": 1234,
+  "type": "Loan",
+  "amount": 11000,
+  "intress": 1,
+  "payments": 2,
+  "date": {
+    "$date": {
+      "$numberLong": "1676128809946"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e8cd134bb857bbe06b788c"
+  },
+  "accountNumber": 1234,
+  "type": "Deposit",
+  "amount": 110002,
+  "intress": 5.47,
+  "payments": 4,
+  "date": {
+    "$date": {
+      "$numberLong": "1676201235711"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e8d56c4bb857bbe06b7890"
+  },
+  "accountNumber": 123,
+  "type": "Loan",
+  "amount": 500,
+  "intress": 2.5,
+  "payments": 4,
+  "date": {
+    "$date": {
+      "$numberLong": "1676203372781"
+    }
+  },
+  "__v": 0
+}]
