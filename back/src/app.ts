@@ -5,7 +5,6 @@ import cors from 'cors'
 import accountOperation from './routes/accountOperation'
 
 const mongoUrl = `mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@${process.env.MONGO_DB_NAME}.pbvafsv.mongodb.net/test`
-//mongodb+srv://admin:<password>@classtest4bank.pbvafsv.mongodb.net/test
 console.log('Trying to connect to mongodb');
 
 mongoose.set("strictQuery", false);
